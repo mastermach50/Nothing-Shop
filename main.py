@@ -12,8 +12,7 @@ print("""
 888    Y888  "Y88P"   "Y888 888  888 888 888  888  "Y88888
                                                        888
 We sell everything...                             Y8b d88P
-                                                   "Y88P" 
-""")
+                                                   "Y88P" """)
 
 print("Starting...")
 ec.check_mysql()
