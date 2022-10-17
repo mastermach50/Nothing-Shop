@@ -1,5 +1,5 @@
 from boxprint import box
-import time
+import error_corrector as ec
 
 print("""
 888b    888          888    888      d8b                  
@@ -15,12 +15,16 @@ We sell everything...                             Y8b d88P
                                                    "Y88P" 
 """)
 
-print("Starting            ", end="")
-time.sleep(1)
-print("[ ok ]")
-print("Connecting to MySQL ", end="")
-time.sleep(1)
-print("[ ok ]")
+print("Starting...")
+ec.check_mysql()
+ec.check_data()
+
 box(["Please Log In"], width=20)
-user = input("Username: ")
-pwd = input("Password: ")
+user = input("Select User [Customer/Admin]: ")
+
+if user == "Customer":
+    import customer
+elif user == "Admin":
+    import admin
+else:
+    print("User not defined")
