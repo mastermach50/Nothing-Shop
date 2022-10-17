@@ -11,7 +11,7 @@ print("""
 888   Y8888 Y88..88P Y88b.  888  888 888 888  888 Y88b 888
 888    Y888  "Y88P"   "Y888 888  888 888 888  888  "Y88888
                                                        888
-We have everything                                Y8b d88P
+We sell everything...                             Y8b d88P
                                                    "Y88P" 
 """)
 
