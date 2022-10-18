@@ -1,27 +1,36 @@
-import mysql.connector
+def run_checks():
+    """Check whether MySQL is installed, it is accessible
+    and whether it has the proper databases and tables"""
 
-def check_mysql():
-    try:# VALIDATE
-        conn = mysql.connector.connect(host="localhost", port="3305",user="root", passwd="password")
-        print("[ ok ] MySQL found...")
+    # Check for MySQL-Python connector
+    try:
+        import mysql.connector
+        print("[ ok ] mysql.connector working")
+    except:
+        print("[Error] Unable to import mysql.connector")
+        exit()
+
+    # Check for MySQL installation
+    try:
+        conn = mysql.connector.connect(host="localhost", user="root", passwd="password")
+        print("[ ok ] MySQL found")
     except:
         print("[Error] Unable to connect to MySQL")
         exit()
 
-def check_data():
-    # VALIDATE
-    conn = mysql.connector.connect(host="localhost", port="3305",user="root", passwd="password")
-    cursor = conn.cursor()
+    # Check for database
     try:
+        cursor = conn.cursor()
         cursor.execute("use nothing_shop")
-        print("[ ok ] Database found...")
+        print("[ ok ] Database found")
     except:
         print("[Error] Unable to access database")
         exit()
 
+    # Check for tables
     try:
         cursor.execute("select * from products")
-        print("[ ok ] Tables found...")
+        print("[ ok ] Tables found")
     except:
         print("[Error] Unable to access table")
         exit()

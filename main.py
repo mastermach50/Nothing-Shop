@@ -15,8 +15,7 @@ We sell everything...                             Y8b d88P
                                                    "Y88P" """)
 
 print("Starting...")
-ec.check_mysql()
-ec.check_data()
+ec.run_checks()
 
 box(["Please Log In"], width=20)
 user = input("Select User [Customer/Admin]: ")

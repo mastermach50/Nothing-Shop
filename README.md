@@ -11,6 +11,6 @@ This program illustrates Python-MySQL connectivity and some general features of 
 - [ ] User interface
 - [ ] Admin Interface
 - [ ] Export as CSV
-- [ ] Error Correction
+- [x] Error Correction
 ---
 🍞
