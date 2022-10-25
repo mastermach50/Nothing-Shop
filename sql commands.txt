@@ -1,0 +1,1 @@
+create table products(id char(5) primary key, name varchar(30), price decimal(10,2), stock int);
