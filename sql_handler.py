@@ -30,24 +30,34 @@ def showShop():
 # Cart Interface
 def exportAsCSV():
     # TODO
+    print("{NOT IMPLEMENTED}")
     pass
 
-def removeProduct():
+def removeProduct(pid):
     # TODO
+    print("{NOT IMPLEMENTED}")
+    pass
+
+def showCart():
+    # TODO
+    print("{NOT IMPLEMENTED}")
     pass
 
 
 # Customer Interface
-def addProduct():
+def addProduct(pid):
     # TODO
+    print("{NOT IMPLEMENTED}")
     pass
 
 
 # Admin Interface
 def listProduct():
     # TODO
+    print("{NOT IMPLEMENTED}")
     pass
 
 def unlistProduct():
     # TODO
+    print("{NOT IMPLEMENTED}")
     pass

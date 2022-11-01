@@ -10,7 +10,7 @@ def cart_init():
 
         sqh.showCart()
 
-        print("q:QUIT r:REMOVE x:EXPORT`")
+        print("q:QUIT r:REMOVE x:EXPORT")
         ch = input(": ")
 
         if ch=="r":
@@ -21,5 +21,5 @@ def cart_init():
             sqh.exportAsCSV()
         
         if ch=="q":
-            print("[Exiting]")
+            print("[Returning to SHOP]")
             break
