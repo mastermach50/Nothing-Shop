@@ -1,24 +1,27 @@
 import mysql.connector
 
-conn = mysql.connector.connect(host="localhost",user="root",passwd="password",database="nothing_shop")
+from boxprint import box
 
+conn = mysql.connector.connect(host="localhost",user="root",passwd="password",database="nothing_shop")
 cur = conn.cursor()
 
-def getProducts():
+def getPIDs():
+    cur.execute("select pid from products")
+    pids = cur.fetchall()
+    print(pids)
+    return pids
+
+def getShop():
     cur.execute("select * from products")
-    out = cur.fetchall()
-    return out
+    products = cur.fetchall()
+    return products
 
-def getProductNumber():
-    cur.execute("select count(*) from products")
-    result = cur.fetchall()
-    num = result[0][0]
-    return num
-
-def addProduct(name,price,stock):
-    num = getProductNumber()
-    pid = "N"+str(num+1)
-    cur.execute(f'insert into products values("{pid}", "{name}", {price}, {stock})')
-
-# addProduct("Pen", "32.65", "333")
-print(getProducts())
+def showShop():
+    products = getShop()
+    for item in products:
+        box([
+        f"ID: {item[0]}",
+        f"Name  :  {item[1]}",
+        f"Price :  {item[2]}",
+        f"Stock :  {item[3]}",
+        ], width=30)
