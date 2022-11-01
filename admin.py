@@ -9,7 +9,6 @@ while True:
     print("q:QUIT l:LIST-ITEM u:UNLIST-ITEM S:SHOW-SHOP`")
     ch = input(": ")
 
-
     if ch=="l":
         sqh.listProduct()
 

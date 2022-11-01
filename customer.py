@@ -7,9 +7,8 @@ box(["Welcome Customer"], width=20)
 box(["Shop"], width=10)
 
 while True:
-    print("q:QUIT a:ADD c:GO-TO-CART S:SHOW-SHOP`")
+    print("q:QUIT a:ADD c:GO-TO-CART S:SHOW-SHOP")
     ch = input(": ")
-
 
     if ch=="a":
         pid = input("Enter product id: ")

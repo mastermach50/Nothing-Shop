@@ -16,6 +16,7 @@ def getShop():
     products = cur.fetchall()
     return products
 
+# General Functions
 def showShop():
     products = getShop()
     for item in products:
@@ -25,3 +26,28 @@ def showShop():
         f"Price :  {item[2]}",
         f"Stock :  {item[3]}",
         ], width=30)
+
+# Cart Interface
+def exportAsCSV():
+    # TODO
+    pass
+
+def removeProduct():
+    # TODO
+    pass
+
+
+# Customer Interface
+def addProduct():
+    # TODO
+    pass
+
+
+# Admin Interface
+def listProduct():
+    # TODO
+    pass
+
+def unlistProduct():
+    # TODO
+    pass
