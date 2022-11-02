@@ -16,7 +16,7 @@ This program illustrates Python-MySQL connectivity and some general features of 
 
 ### Authors
 - Mathew Manoj
-- Kiran Alias Shaji
 - Vishal Vijayachandran
+- Kiran Alias Shaji
 ---
 🍞
