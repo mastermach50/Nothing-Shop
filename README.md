@@ -1,4 +1,4 @@
-# Nothing-Shop
+# [Nothing-Shop](https://github.com/MasterMach50/Nothing-Shop)
 ![](https://img.shields.io/badge/project%20phase-rough%20coding-yellow)
 > Class 12 Computer Science final project.
 
