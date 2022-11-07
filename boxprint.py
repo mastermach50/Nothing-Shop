@@ -22,3 +22,8 @@ def box(lines, width=40):
     for line in newlines:
         print(chars["vr"]+" " + line + " "+chars["vr"])
     print(chars["bl"] + chars["hr"]*(width+2) +chars["br"]) # print bottom of box
+
+def pad(string, length):
+    string = str(string)
+    newstring = string + (length-len(string))*" "
+    return newstring

@@ -19,5 +19,5 @@ while True:
         sqh.showShop()
 
     if ch=="q":
-        print("[Exiting]")
+        print("[ Exiting ]")
         exit()
