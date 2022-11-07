@@ -5,6 +5,8 @@ from boxprint import box
 conn = mysql.connector.connect(host="localhost",user="root",passwd="password",database="nothing_shop")
 cur = conn.cursor()
 
+user_cart = []
+
 def getPIDs():
     cur.execute("select pid from products")
     pids = cur.fetchall()
