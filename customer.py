@@ -11,8 +11,7 @@ while True:
     ch = input(": ")
 
     if ch=="a":
-        pid = input("Enter product id: ")
-        sqh.addProduct(pid)
+        cart.addProduct()
 
     if ch=="c":
         cart.cart_init()

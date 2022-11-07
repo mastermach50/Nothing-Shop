@@ -20,9 +20,9 @@ ec.run_checks()
 box(["Please Log In"], width=20)
 user = input("Select User [Customer/Admin]: ")
 
-if user.lower() == "customer":
+if user.lower() == "customer" or user.lower() == "c":
     import customer
-elif user.lower() == "admin":
+elif user.lower() == "admin" or user.lower() == "a":
     import admin
 else:
     print("User not defined")

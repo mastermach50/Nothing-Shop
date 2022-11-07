@@ -5,12 +5,14 @@ from boxprint import box
 conn = mysql.connector.connect(host="localhost",user="root",passwd="password",database="nothing_shop")
 cur = conn.cursor()
 
-user_cart = []
-
 def getPIDs():
     cur.execute("select pid from products")
-    pids = cur.fetchall()
-    print(pids)
+    data = cur.fetchall()
+    pids = []
+
+    for item in data:
+        pids.append(item[0])
+
     return pids
 
 def getShop():
@@ -29,29 +31,10 @@ def showShop():
         f"Stock :  {item[3]}",
         ], width=30)
 
-# Cart Interface
-def exportAsCSV():
-    # TODO
-    print("{NOT IMPLEMENTED}")
-    pass
-
-def removeProduct(pid):
-    # TODO
-    print("{NOT IMPLEMENTED}")
-    pass
-
-def showCart():
-    # TODO
-    print("{NOT IMPLEMENTED}")
-    pass
-
-
-# Customer Interface
-def addProduct(pid):
-    # TODO
-    print("{NOT IMPLEMENTED}")
-    pass
-
+def getProduct(pid):
+    cur.execute(f"select * from products where pid={pid}")
+    product = cur.fetchall()
+    return product[0]
 
 # Admin Interface
 def listProduct():
