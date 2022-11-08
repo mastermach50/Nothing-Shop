@@ -5,7 +5,7 @@ user_cart = []
 
 def cart_init():
     
-    box(["Shop"], width=10)
+    box(["Cart"], width=10)
 
     while True:
 
@@ -34,7 +34,7 @@ def addProduct():
     elif pid in pids:
         user_cart.append(pid)
         product = sqh.getProduct(pid)
-        print(f"{product[1]} added to cart")
+        box([f"{product[1]} added to cart"], width=5)
 
     else:
         print("[ INVALID PRODUCT ID ]")
@@ -46,7 +46,7 @@ def removeProduct():
     if pid in user_cart:
         user_cart.remove(pid)
         product = sqh.getProduct(pid)
-        print(f"{product[1]} removed from cart")
+        box([f"{product[1]} removed from cart"], width=5)
 
     else:
         print("[ PRODUCT NOT IN CART ]")
@@ -60,14 +60,14 @@ def showCart():
 
         lines = []
 
-        lines.append("ID" + "  "+ "Name" + " "*18 + "Price"+ "  ")
-        lines.append("-"*28)
+        lines.append("ID" + "  "+ "Name" + " "*23 + "Price"+ "  ")
+        lines.append("-"*40)
 
         price_total = 0
 
         for pid in user_cart:
             product = sqh.getProduct(pid)
-            lines.append(f"{pad(product[0], 2)}  {pad(product[1], 20)}  {pad(product[2], 7)}") # len -> 33
+            lines.append(f"{pad(product[0], 2)}  {pad(product[1], 25)}  {pad(product[2], 9)}") # len -> 40
             price_total+=product[2]
         
         box(lines)

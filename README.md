@@ -12,7 +12,7 @@ This program illustrates Python-MySQL connectivity and some general features of 
 - [x] Admin Interface
 - [ ] Export as CSV
 - [x] Error Correction
-- [ ] Cart Interface
+- [x] Cart Interface
 
 ### Authors
 - Mathew Manoj
