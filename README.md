@@ -7,7 +7,7 @@ This program illustrates Python-MySQL connectivity and some general features of 
 
 ## Currently Implemented
 - [x] Stylized Printing
-- [ ] Python-MySQL connector
+- [x] Python-MySQL connector
 - [x] User interface
 - [x] Admin Interface
 - [ ] Export as CSV

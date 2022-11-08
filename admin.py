@@ -3,17 +3,26 @@ import sql_handler as sqh
 
 box(["Welcome Admin"], width=20)
 
-box(["Shop"], width=10)
-
 while True:
-    print("q:QUIT l:LIST-ITEM u:UNLIST-ITEM S:SHOW-SHOP")
+    print("q:QUIT l:LIST-ITEM u:UNLIST-ITEM s:SHOW-SHOP")
     ch = input(": ")
 
     if ch=="l":
-        sqh.listProduct()
+        name = input("Enter product name: ")
+        price = float(input("Enter product price: "))
+        stock = int(input("Enter product stock: "))
+
+        product = sqh.listProduct(name, price, stock)
+        if product:
+            box([f"{product[1]} added to shop"])
 
     if ch=="u":
-        sqh.unlistProduct()
+        pid = int(input("Enter product id: "))
+        
+        response = sqh.unlistProduct(pid)
+
+        if response:
+            box([f"Product {pid} was removed from shop"])
 
     if ch=="s":
         sqh.showShop()

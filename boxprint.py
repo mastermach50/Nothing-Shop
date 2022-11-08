@@ -25,5 +25,8 @@ def box(lines, width=40):
 
 def pad(string, length):
     string = str(string)
-    newstring = string + (length-len(string))*" "
-    return newstring
+    if len(string) > length:
+        return string
+    else:
+        new_string = string + (length-len(string))*" "
+        return new_string
