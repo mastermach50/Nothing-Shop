@@ -1,5 +1,4 @@
 import mysql.connector
-
 from boxprint import box
 
 conn = mysql.connector.connect(host="localhost",user="root",passwd="password",database="nothing_shop")

@@ -17,12 +17,15 @@ def cart_init():
         if ch=="r":
             removeProduct()
                 
-        if ch=="x":
+        elif ch=="x":
             sqh.exportAsCSV()
-        
-        if ch=="q":
+
+        elif ch=="q":
             print("[ Returning to SHOP ]")
             break
+
+        else:
+            print("[ INVALID INPUT ]")
 
 def addProduct():
     pid = int(input("Enter the product id: "))
@@ -41,7 +44,6 @@ def addProduct():
     
 def removeProduct():
     pid = int(input("Enter the product id: "))
-    pids = sqh.getPIDs()
 
     if pid in user_cart:
         user_cart.remove(pid)
