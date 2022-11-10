@@ -11,7 +11,7 @@ def cart_init():
 
         showCart()
 
-        print("q:QUIT r:REMOVE x:EXPORT")
+        print("[CART] q:QUIT r:REMOVE x:EXPORT")
         ch = input(": ")
 
         if ch=="r":

@@ -39,7 +39,11 @@ def showShop():
 def getProduct(pid):
     cur.execute(f"select * from products where pid={pid}")
     product = cur.fetchall()
-    return product[0]
+
+    if product:
+        return product[0]
+    else:
+        return False
 
 # Admin Interface
 def listProduct(name, price, stock):
@@ -72,3 +76,14 @@ def unlistProduct(pid):
         print("[ INVALID PRODUCT ID ]")
         return False
 
+def modifyProduct(pid, name, price, stock):
+    
+    if pid in getPIDs():
+        cur.execute(f"update products set name='{name}', price={price}, stock={stock} where pid={pid}")
+        conn.commit()
+
+        return getProduct(pid)
+
+    else:
+        print("[ INVALID PRODUCT ID ]")
+        return False

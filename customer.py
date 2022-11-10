@@ -7,7 +7,7 @@ box(["Welcome Customer"], width=20)
 box(["Shop"], width=10)
 
 while True:
-    print("q:QUIT a:ADD c:GO-TO-CART s:SHOW-SHOP")
+    print("[SHOP] q:QUIT a:ADD c:GO-TO-CART s:SHOW-SHOP")
     ch = input(": ")
 
     if ch=="a":
