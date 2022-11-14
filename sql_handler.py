@@ -4,6 +4,7 @@ from boxprint import box
 conn = mysql.connector.connect(host="localhost",user="root",passwd="password",database="nothing_shop")
 cur = conn.cursor()
 
+# Some General Functions
 def getPIDs():
     cur.execute("select pid from products")
     data = cur.fetchall()
@@ -19,7 +20,6 @@ def getShop():
     products = cur.fetchall()
     return products
 
-# General Functions
 def showShop():
     products = getShop()
     print(products)
