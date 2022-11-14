@@ -1,5 +1,5 @@
 # [Nothing-Shop](https://github.com/MasterMach50/Nothing-Shop)
-![](https://img.shields.io/badge/project%20phase-refining-green)
+![shields.io](https://img.shields.io/badge/project%20phase-refining-green)
 > Class 12 Computer Science final project.
 
 This a command line shop interface made in Python, with a database implemented using MySQL.
