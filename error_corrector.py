@@ -35,3 +35,11 @@ def run_checks():
         print("[Error] Unable to access table")
         exit()
 
+    # Check for CSV module
+    try:
+        import csv
+        print("[ ok ] CSV module found")
+    except:
+        print("[Error] Unable to import csv")
+        exit()
+

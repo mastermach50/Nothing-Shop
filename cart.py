@@ -1,5 +1,6 @@
 from boxprint import box, pad
 import sql_handler as sqh
+import csv
 
 user_cart = []
 
@@ -18,7 +19,7 @@ def cart_init():
             removeProduct()
                 
         elif ch=="x":
-            sqh.exportAsCSV()
+            exportAsCSV()
 
         elif ch=="q":
             print("[ Returning to SHOP ]")
@@ -54,7 +55,6 @@ def removeProduct():
         print("[ PRODUCT NOT IN CART ]")
 
 def showCart():
-
     if user_cart == []:
         print("[ CART IS EMPTY ]")
     
@@ -74,3 +74,14 @@ def showCart():
         
         box(lines)
         box([f"Total: {price_total}"], width=28)
+
+def exportAsCSV():
+    name = input("Enter name of file (without .csv): ")
+    with open(name+".csv", "w", newline="") as f:
+        wr = csv.writer(f)
+        wr.writerow(["Product ID", "Name", "Price"])
+
+        for pid in user_cart:
+            product = sqh.getProduct(pid)
+            wr.writerow([product[0], product[1], product[2]])
+    box([f"Cart was exported to {name}.csv"], width=5)
