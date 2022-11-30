@@ -1,0 +1,36 @@
+Date : 2022-11-30 21:14:30
+Directory : d:\Manoj\Documents\Code\Python\Computer Class\Class 12 D\Nothing-Shop
+Total : 10 files,  90 codes, 55 comments, 55 blanks, all 200 lines
+
+Languages
++----------+------------+------------+------------+------------+------------+
+| language | files      | code       | comment    | blank      | total      |
++----------+------------+------------+------------+------------+------------+
+| Markdown |          2 |         88 |          0 |         34 |        122 |
+| Python   |          8 |          2 |         55 |         21 |         78 |
++----------+------------+------------+------------+------------+------------+
+
+Directories
++-------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                            | files      | code       | comment    | blank      | total      |
++-------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                               |         10 |         90 |         55 |         55 |        200 |
+| docs                                                                                            |          2 |         88 |          0 |         34 |        122 |
++-------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++-------------------------------------------------------------------------------------------------+----------+------------+------------+------------+------------+
+| filename                                                                                        | language | code       | comment    | blank      | total      |
++-------------------------------------------------------------------------------------------------+----------+------------+------------+------------+------------+
+| d:\Manoj\Documents\Code\Python\Computer Class\Class 12 D\Nothing-Shop\admin.py                  | Python   |          0 |          9 |          2 |         11 |
+| d:\Manoj\Documents\Code\Python\Computer Class\Class 12 D\Nothing-Shop\boxprint.py               | Python   |          0 |          9 |          3 |         12 |
+| d:\Manoj\Documents\Code\Python\Computer Class\Class 12 D\Nothing-Shop\cart.py                   | Python   |          3 |         13 |          8 |         24 |
+| d:\Manoj\Documents\Code\Python\Computer Class\Class 12 D\Nothing-Shop\customer.py               | Python   |          0 |          7 |          2 |          9 |
+| d:\Manoj\Documents\Code\Python\Computer Class\Class 12 D\Nothing-Shop\db_create.py              | Python   |          0 |          3 |          2 |          5 |
+| d:\Manoj\Documents\Code\Python\Computer Class\Class 12 D\Nothing-Shop\docs\Code.md              | Markdown |         86 |          0 |         34 |        120 |
+| d:\Manoj\Documents\Code\Python\Computer Class\Class 12 D\Nothing-Shop\docs\Source Code Intro.md | Markdown |          2 |          0 |          0 |          2 |
+| d:\Manoj\Documents\Code\Python\Computer Class\Class 12 D\Nothing-Shop\error_corrector.py        | Python   |          0 |          3 |          2 |          5 |
+| d:\Manoj\Documents\Code\Python\Computer Class\Class 12 D\Nothing-Shop\main.py                   | Python   |          0 |          2 |          0 |          2 |
+| d:\Manoj\Documents\Code\Python\Computer Class\Class 12 D\Nothing-Shop\sql_handler.py            | Python   |         -1 |          9 |          2 |         10 |
+| Total                                                                                           |          |         90 |         55 |         55 |        200 |
++-------------------------------------------------------------------------------------------------+----------+------------+------------+------------+------------+
