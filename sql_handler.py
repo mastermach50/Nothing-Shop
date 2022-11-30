@@ -1,10 +1,16 @@
+# SQL Handler
+
+# This module is used to communicate with the MySQL Database Server.
+# This is the module that accesses data from the database and parses it for
+# easier use throughout the program.
+
 import mysql.connector
 from boxprint import box
 
 conn = mysql.connector.connect(host="localhost",user="root",passwd="password",database="nothing_shop")
 cur = conn.cursor()
 
-# Some General Functions
+# Get a list of all the product IDs
 def getPIDs():
     cur.execute("select pid from products")
     data = cur.fetchall()
@@ -15,14 +21,15 @@ def getPIDs():
 
     return pids
 
+# Get all the products in the shop
 def getShop():
     cur.execute("select * from products")
     products = cur.fetchall()
     return products
 
+# Print all the products in the shop
 def showShop():
     products = getShop()
-    print(products)
 
     if products == []:
         box(["Shop is Empty"], width=5)
@@ -36,6 +43,7 @@ def showShop():
             f"Stock :  {item[3]}",
             ], width=30)
 
+# Get the details of a product using its ID
 def getProduct(pid):
     cur.execute(f"select * from products where pid={pid}")
     product = cur.fetchall()
@@ -45,7 +53,7 @@ def getProduct(pid):
     else:
         return False
 
-# Admin Interface
+# List a product in the shop
 def listProduct(name, price, stock):
     pids = getPIDs()
 
@@ -64,6 +72,7 @@ def listProduct(name, price, stock):
 
     return getProduct(newpid)
 
+# Unlist a product from the shop
 def unlistProduct(pid):
     pids = getPIDs()
 
@@ -76,6 +85,7 @@ def unlistProduct(pid):
         print("[ INVALID PRODUCT ID ]")
         return False
 
+# Modify the details of a product in the shop
 def modifyProduct(pid, name, price, stock):
     
     if pid in getPIDs():

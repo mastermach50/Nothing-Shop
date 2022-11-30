@@ -1,0 +1,40 @@
+Date : 2022-11-30 21:14:30
+Directory : d:\Manoj\Documents\Code\Python\Computer Class\Class 12 D\Nothing-Shop
+Total : 14 files,  694 codes, 79 comments, 274 blanks, all 1047 lines
+
+Languages
++----------+------------+------------+------------+------------+------------+
+| language | files      | code       | comment    | blank      | total      |
++----------+------------+------------+------------+------------+------------+
+| Markdown |          6 |        423 |          0 |        155 |        578 |
+| Python   |          8 |        271 |         79 |        119 |        469 |
++----------+------------+------------+------------+------------+------------+
+
+Directories
++-------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                            | files      | code       | comment    | blank      | total      |
++-------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                               |         14 |        694 |         79 |        274 |      1,047 |
+| docs                                                                                            |          5 |        404 |          0 |        152 |        556 |
++-------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++-------------------------------------------------------------------------------------------------+----------+------------+------------+------------+------------+
+| filename                                                                                        | language | code       | comment    | blank      | total      |
++-------------------------------------------------------------------------------------------------+----------+------------+------------+------------+------------+
+| d:\Manoj\Documents\Code\Python\Computer Class\Class 12 D\Nothing-Shop\README.md                 | Markdown |         19 |          0 |          3 |         22 |
+| d:\Manoj\Documents\Code\Python\Computer Class\Class 12 D\Nothing-Shop\admin.py                  | Python   |         32 |          9 |         15 |         56 |
+| d:\Manoj\Documents\Code\Python\Computer Class\Class 12 D\Nothing-Shop\boxprint.py               | Python   |         22 |         13 |          9 |         44 |
+| d:\Manoj\Documents\Code\Python\Computer Class\Class 12 D\Nothing-Shop\cart.py                   | Python   |         64 |         13 |         35 |        112 |
+| d:\Manoj\Documents\Code\Python\Computer Class\Class 12 D\Nothing-Shop\customer.py               | Python   |         17 |          7 |         10 |         34 |
+| d:\Manoj\Documents\Code\Python\Computer Class\Class 12 D\Nothing-Shop\db_create.py              | Python   |         26 |          3 |         12 |         41 |
+| d:\Manoj\Documents\Code\Python\Computer Class\Class 12 D\Nothing-Shop\docs\Acknowledgment.md    | Markdown |          6 |          0 |          5 |         11 |
+| d:\Manoj\Documents\Code\Python\Computer Class\Class 12 D\Nothing-Shop\docs\Code.md              | Markdown |        374 |          0 |        129 |        503 |
+| d:\Manoj\Documents\Code\Python\Computer Class\Class 12 D\Nothing-Shop\docs\Introduction.md      | Markdown |          5 |          0 |          9 |         14 |
+| d:\Manoj\Documents\Code\Python\Computer Class\Class 12 D\Nothing-Shop\docs\Objective.md         | Markdown |          2 |          0 |          4 |          6 |
+| d:\Manoj\Documents\Code\Python\Computer Class\Class 12 D\Nothing-Shop\docs\Source Code Intro.md | Markdown |         17 |          0 |          5 |         22 |
+| d:\Manoj\Documents\Code\Python\Computer Class\Class 12 D\Nothing-Shop\error_corrector.py        | Python   |         32 |         10 |          9 |         51 |
+| d:\Manoj\Documents\Code\Python\Computer Class\Class 12 D\Nothing-Shop\main.py                   | Python   |         14 |         13 |          4 |         31 |
+| d:\Manoj\Documents\Code\Python\Computer Class\Class 12 D\Nothing-Shop\sql_handler.py            | Python   |         64 |         11 |         25 |        100 |
+| Total                                                                                           |          |        694 |         79 |        274 |      1,047 |
++-------------------------------------------------------------------------------------------------+----------+------------+------------+------------+------------+

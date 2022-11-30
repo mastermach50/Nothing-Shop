@@ -1,9 +1,14 @@
+# DB_Create
+
+# A simple script to create a sample shop's database.
+# Note that this script overwrites the currently present shop's database.
+
 import mysql.connector
 
 conn = mysql.connector.connect(host="localhost",user="root",passwd="password")
 cur = conn.cursor()
 
-cur.execute("drop database nothing_shop")
+cur.execute("drop database if exists nothing_shop")
 cur.execute("create database nothing_shop")
 
 conn.close()
@@ -17,11 +22,11 @@ products = [
     ["Item3", "3420.00", "134323"],
     ["Item4", "4310.00", "123"],
     ["Item5", "1340.00", "1323"],
-    ["Item6", "140.00", "1243"],
-    ["Item7", "130.00", "12323"],
-    ["Item8", "12340.00", "1423"],
-    ["Item9", "140.00", "1243"],
-    ["Item10", "1230.00", "1243"]
+    # ["Item6", "140.00", "1243"],
+    # ["Item7", "130.00", "12323"],
+    # ["Item8", "12340.00", "1423"],
+    # ["Item9", "140.00", "1243"],
+    # ["Item10", "1230.00", "1243"]
 ]
 
 cur.execute("create table products(pid int primary key, name varchar(30), price numeric(13,2), stock int);")

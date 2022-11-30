@@ -1,3 +1,8 @@
+# Error Corrector
+
+# A simple script to check whether all the required modules are installed
+# and that they are working properly.
+
 def run_checks():
     """Check whether MySQL is installed, it is accessible
     and whether it has the proper databases and tables"""
