@@ -1,4 +1,4 @@
-<div calss="main" style="border: solid black 5px; border-radius: 40px; padding: 2rem">
+<div class="main" style="border: solid black 5px; border-radius: 40px; padding: 2rem">
 
 # Acknowledgment
 
