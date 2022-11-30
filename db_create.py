@@ -1,9 +1,14 @@
+# DB_Create
+
+# A simple script to create a sample shop's database.
+# Note that this script overwrites the currently present shop's database.
+
 import mysql.connector
 
 conn = mysql.connector.connect(host="localhost",user="root",passwd="password")
 cur = conn.cursor()
 
-cur.execute("drop database nothing_shop")
+cur.execute("drop database if exists nothing_shop")
 cur.execute("create database nothing_shop")
 
 conn.close()

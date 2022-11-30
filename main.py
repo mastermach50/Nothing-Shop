@@ -1,6 +1,7 @@
 from boxprint import box
 import error_corrector as ec
 
+# Print the logo
 print("""
 888b    888          888    888      d8b                  
 8888b   888          888    888      Y8P                  
@@ -15,8 +16,10 @@ We sell everything...                             Y8b d88P
                                                    "Y88P" """)
 
 print("Starting...")
+# Run some checks to make sure that all the prerequisites are present
 ec.run_checks()
 
+# Log in a as either and admin or customer
 box(["Please Log In"], width=20)
 user = input("Select User [Customer/Admin]: ")
 
