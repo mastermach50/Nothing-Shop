@@ -43,13 +43,10 @@ def addProduct():
     pid = int(input("Enter the product id: "))
     pids = sqh.getPIDs()
 
-    if pid in user_cart:
-        box(["Product already in cart"], width=5)
-
-    elif pid in pids:
+    if pid in pids:
         user_cart.append(pid)
         product = sqh.getProduct(pid)
-        box([f"{product[1]} added to cart"], width=5)
+        box([f"{product[1]} added to cart (x{user_cart.count(pid)})"], width=5)
 
     else:
         print("[ INVALID PRODUCT ID ]")
