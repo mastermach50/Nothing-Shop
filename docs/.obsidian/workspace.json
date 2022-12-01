@@ -1,0 +1,150 @@
+{
+  "main": {
+    "id": "903e34548ddf193c",
+    "type": "split",
+    "children": [
+      {
+        "id": "365ead44fc5bd3ce",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4f69f9de7ca0b1e8",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "5. Code Reformatted Final.pdf"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "7d15fd526492bc05",
+    "type": "split",
+    "children": [
+      {
+        "id": "3bf23137ab4c383b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ad279906da8c150c",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "c9b00874edbd37eb",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "6b2a367bfe6b1894",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "8949cb28b21752fc",
+    "type": "split",
+    "children": [
+      {
+        "id": "dba5fb5be6b2c82c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c42d96e37535fb08",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "5. Code Reformatted Final.pdf",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "b747a1d5879f7789",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "5. Code Reformatted Final.pdf",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "d644d7fbc8dce9c9",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "b4db7de395fe9e35",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "5. Code Reformatted Final.pdf"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "4f69f9de7ca0b1e8",
+  "lastOpenFiles": [
+    "4. Source Code Explanation.pdf",
+    "5. Code Reformatted Final.pdf",
+    "5. Code.md",
+    "3. Objective.md",
+    "3. Objective.pdf",
+    "5. Code Reformatted 4.pdf",
+    "5. Code Reformatted 2.pdf",
+    "5. Code.pdf",
+    "5. Code Reformatted 3.pdf",
+    "4. Source Code Explanation.md"
+  ]
+}
